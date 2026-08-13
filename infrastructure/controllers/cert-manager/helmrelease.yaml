@@ -14,8 +14,8 @@ spec:
         namespace: flux-system
       version: 1.21.1
   
-  install:
-    createNamespace: true
+  # install:
+  #   createNamespace: true
   
   interval: 1m0s
   
