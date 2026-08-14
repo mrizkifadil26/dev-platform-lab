@@ -7,12 +7,7 @@ metadata:
 spec:
   interval: 1h0m0s
   timeout: 5m0s
-  chart:
-    spec:
-      chart: kube-state-metrics
-      version: ^5.0.0
-      sourceRef:
-        kind: HelmRepository
-        name: bitnami
-        namespace: flux-system
-      interval: 1h0m0s
+  chartRef:
+    kind: OCIRepository
+    name: kube-state-metrics
+    namespace: flux-system
