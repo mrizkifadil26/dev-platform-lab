@@ -8,10 +8,15 @@ spec:
   chart:
     spec:
       chart: metrics-server
+      interval: 1h0m0s
       version: ^3.11.0
       sourceRef:
         kind: HelmRepository
         name: metrics-server
         namespace: flux-system
-      interval: 1h0m0s
   interval: 1h0m0s
+  timeout: 5m0s
+  values:
+    args:
+      - --kubelet-insecure-tls
+      - --kubelet-preferred-address-types=InternalIP,Hostname,InternalDNS,ExternalDNS,ExternalIP
