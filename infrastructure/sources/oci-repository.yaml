@@ -16,6 +16,9 @@ metadata:
   name: prometheus-node-exporter
   namespace: flux-system
 spec:
+  layerSelector:
+    mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
+    operation: copy
   interval: 1h0m0s
   url: oci://ghcr.io/prometheus-community/charts/prometheus-node-exporter
   ref:
