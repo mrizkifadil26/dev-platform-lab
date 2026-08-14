@@ -6,3 +6,4 @@ resources:
 - external-secrets
 - metrics-server
 - vault
+- prometheus-operator
