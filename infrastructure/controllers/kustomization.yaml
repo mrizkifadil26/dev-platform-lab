@@ -7,4 +7,3 @@ resources:
 - metrics-server
 - vault
 - prometheus-operator
-- metallb
