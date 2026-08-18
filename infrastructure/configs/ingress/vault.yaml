@@ -11,5 +11,5 @@ spec:
     - conditions:
         - prefix: /
       services:
-        - name: vault
-          port: 80
+        - name: vault-internal
+          port: 8200
