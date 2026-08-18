@@ -34,6 +34,6 @@ spec:
     mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
     operation: copy
   interval: 1h0m0s
-  url: oci://ghcr.io/grafana-community/charts/grafana
+  url: oci://ghcr.io/grafana-community/helm-charts/grafana
   ref:
-    tag: 12.5.0
+    tag: 12.10.0
