@@ -4,6 +4,6 @@ kind: Kustomization
 resources:
 - controllers
 - monitoring
-# - configs
+- configs
 - core
 - sources
